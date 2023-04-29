@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "figma balls",
+    "description": "figma balls",
+    "version": "1.0",
+    "browser_specific_settings": {
+        "gecko": {
+            "update_url": "https://raw.githubusercontent.com/Solarflame5/figma-balls/master/updates.json"
+        }
+    },
+      
+    "permissions": [
+        "tabs"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.figma.com/*"],
+            "js": ["figmaballs.js"]
+        }
+    ]
+}
